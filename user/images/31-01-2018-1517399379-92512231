@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 22, 2018 at 02:37 PM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 7.1.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `toll1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `email` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `name` bigint(45) NOT NULL,
+  `phone` bigint(15) NOT NULL,
+  `DOB` date NOT NULL,
+  `vehicle` varchar(20) NOT NULL,
+  `car-paper` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`email`, `password`, `name`, `phone`, `DOB`, `vehicle`, `car-paper`) VALUES
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516627805-40412430.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516627925-80868176.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516627940-99162765.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516627967-39180571.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516627994-79093886.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516628011-37007400.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516628041-78322830.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516628063-20070164.png'),
+('ds49574@gmail.com', 'dharmendra1234', 0, 9766052114, '1995-09-30', 'MH05BB9154', '../images/22-01-2018-1516628105-62396149.png'),
+('js1034537@gmail.com', 'edfdsgfdhgfd', 0, 2324535463, '2018-01-03', 'MH05BB9154', '../images/22-01-2018-1516628155-69264673.jpg');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
